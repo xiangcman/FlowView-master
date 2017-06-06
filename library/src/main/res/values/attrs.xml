@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LineFlowLayout">
+        <attr name="flow_line_count" format="integer" />
+        <attr name="is_line_center" format="boolean" />
+        <!--<attr name="effect_top_color" format="color" />-->
+        <!--<attr name="effect_bottom_color" format="color" />-->
+        <!--<attr name="need_scroll_bar" format="boolean" />-->
+        <!--<attr name="need_effect" format="boolean" />-->
+    </declare-styleable>
+
+</resources>
