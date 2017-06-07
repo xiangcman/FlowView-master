@@ -49,9 +49,10 @@ allprojects {
                 maven { url 'https://jitpack.io' }
         }
 }
-}
+
 dependencies {
         compile 'com.github.1002326270xc:FlowView-master:v1.0'
+}
 ```
 
 **后期添加:**
