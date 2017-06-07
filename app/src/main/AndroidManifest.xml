@@ -13,6 +13,7 @@
         </activity>
         <activity android:name=".DiffHeightTextActivity" />
         <activity android:name=".DiffHeightTextCenterActivity" />
+        <activity android:name=".ScrollFlowActivity" />
         <activity android:name=".LineFlowActivity" />
         <activity android:name=".LandingActivity">
             <intent-filter>

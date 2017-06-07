@@ -39,5 +39,11 @@ public class LandingActivity extends AppCompatActivity {
                 startActivity(new Intent(LandingActivity.this, DiffHeightTextCenterActivity.class));
             }
         });
+        findViewById(R.id.scroll_flow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LandingActivity.this, ScrollFlowActivity.class));
+            }
+        });
     }
 }

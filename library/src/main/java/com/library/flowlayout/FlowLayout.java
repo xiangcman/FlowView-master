@@ -1,16 +1,11 @@
 package com.library.flowlayout;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Camera;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.SparseArray;
-import android.view.MotionEvent;
-import android.view.VelocityTracker;
 import android.view.View;
-import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
@@ -45,12 +40,7 @@ public class FlowLayout extends ViewGroup implements FlowNotification {
     @Override
     public void onChange() {
         if (flowAdapter != null) {
-            removeAllViews();
-            for (int i = 0; i < flowAdapter.getCount(); i++) {
-                View view = View.inflate(getContext(), flowAdapter.generateLayout(i), null);
-                flowAdapter.getView(i, view);
-                addView(view, new MarginLayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
-            }
+            addItemView(flowAdapter);
         }
     }
 
@@ -94,7 +84,7 @@ public class FlowLayout extends ViewGroup implements FlowNotification {
     public FlowLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.LineFlowLayout);
-        isLineCenter = array.getBoolean(R.styleable.LineFlowLayout_is_line_center, default_line_center);
+        isLineCenter = array.getBoolean(R.styleable.FlowLayout_is_line_center, default_line_center);
         array.recycle();
         initArgus(context, attrs);
     }
@@ -257,6 +247,11 @@ public class FlowLayout extends ViewGroup implements FlowNotification {
         }
         this.flowAdapter = flowAdapter;
         flowAdapter.setFlowNotification(this);
+        addItemView(flowAdapter);
+    }
+
+    private void addItemView(FlowAdapter flowAdapter) {
+        removeAllViews();
         for (int i = 0; i < flowAdapter.getCount(); i++) {
             View view = View.inflate(getContext(), flowAdapter.generateLayout(i), null);
             flowAdapter.getView(i, view);

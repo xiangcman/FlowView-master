@@ -28,4 +28,10 @@
         android:layout_height="wrap_content"
         android:text="规定行数的FlowLayout" />
 
+    <Button
+        android:id="@+id/scroll_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自带滑动的FlowLayout" />
+
 </LinearLayout>

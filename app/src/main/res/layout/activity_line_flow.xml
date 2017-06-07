@@ -5,11 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.library.flowlayout.ScrollFlowLayout
+    <com.library.flowlayout.LineFlowLayout
         android:id="@+id/flow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        scrollflow:effect_top_color="#8899CCFF"
-        scrollflow:need_effect="true" />
+        scrollflow:flow_line_count="5" />
 
 </LinearLayout>
