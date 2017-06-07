@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/1002326270xc/FlowView-master.svg)](https://jitpack.io/#1002326270xc/FlowView-master/v1.0)
+
 在写该文章之前自己也写了一个用`RecyclerView`实现的流式布局[RecyclerView实现的流式布局](https://github.com/1002326270xc/LayoutManager-FlowLayout),也得到一些关注，但是也有不少的朋友提出了相关的问题，比如想规定行数的流式布局，还有item高度不统一时动态显示item的位置问题。于是近两天就简单写了个`ViewGroup`实现的流式布局：
 
 这里在时给出了四种情况的用例:
@@ -38,6 +40,20 @@
         <attr name="is_line_center" format="boolean" />
 </declare-styleable>
 ```
+
+**gradle依赖**
+```java
+allprojects {
+        repositories {
+                ...
+                maven { url 'https://jitpack.io' }
+        }
+}
+}
+dependencies {
+        compile 'com.github.1002326270xc:FlowView-master:v1.0'
+```
+
 **后期添加:**
 最近在学习自定义滑动控件，自己也给该流式布局加上滑动的处理，上面的demo里面在时用的是`ScrollView`处理滑动
 
