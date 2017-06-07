@@ -3,22 +3,22 @@
 这里在时给出了四种情况的用例:
 **(一)文字统一高度，也就是默认的情况**
 
-![默认情况.gif](http://upload-images.jianshu.io/upload_images/2528336-b8c5bd5bfee5921c.gif?imageMogr2/auto-orient/strip)
+![默认情况.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/基本.gif)
 
 这里详见:[MainActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/MainActivity.java)
 
 **(二)不同高度的文本，没设置居中显示的情况**
 
-![不同高度的文本，没设置居中显示的情况.gif](http://upload-images.jianshu.io/upload_images/2528336-330e6947a786d415.gif?imageMogr2/auto-orient/strip)
+![不同高度的文本，没设置居中显示的情况.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/不同高度的文本，没设置居中显示的情况.gif)
 这里详见:[DiffHeightTextActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/DiffHeightTextActivity.java)
 
 **(三)不同高度的文本，设置居中显示的情况**
-![不同高度的文本，设置居中显示的情况.gif](http://upload-images.jianshu.io/upload_images/2528336-6536a4b7cb03da8b.gif?imageMogr2/auto-orient/strip)
+![不同高度的文本，设置居中显示的情况.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/不同高度的文本，设置居中显示的情况.gif)
 
 这里详见:[DiffHeightTextCenterActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/DiffHeightTextCenterActivity.java)
 
 **(四)规定行数的流式布局**
-![规定行数的文本.gif](http://upload-images.jianshu.io/upload_images/2528336-827c4d78d286e845.gif?imageMogr2/auto-orient/strip)
+![规定行数的文本.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/规定行数的文本.gif)
 
 这里详见:[LineFlowActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/LineFlowActivity.java)
 
