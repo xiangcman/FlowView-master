@@ -35,6 +35,9 @@
 最近在学习自定义滑动控件，自己也给该流式布局加上滑动的处理，上面的demo里面在时用的是`ScrollView`处理滑动
 
 ###关于我:
-**email:**a1002326270@163.com
+
+**email:** a1002326270@163.com
+
 **csdn:**[enter](http://blog.csdn.net/u010429219/article/details/72897017)
+
 **简书:**[enter](http://www.jianshu.com/p/67c4bd0e2091)
