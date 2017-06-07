@@ -1,6 +1,7 @@
 在写该文章之前自己也写了一个用`RecyclerView`实现的流式布局[RecyclerView实现的流式布局](https://github.com/1002326270xc/LayoutManager-FlowLayout),也得到一些关注，但是也有不少的朋友提出了相关的问题，比如想规定行数的流式布局，还有item高度不统一时动态显示item的位置问题。于是近两天就简单写了个`ViewGroup`实现的流式布局：
 
 这里在时给出了四种情况的用例:
+
 **(一)文字统一高度，也就是默认的情况**
 
 ![默认情况.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/基本.gif)
@@ -13,11 +14,13 @@
 这里详见:[DiffHeightTextActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/DiffHeightTextActivity.java)
 
 **(三)不同高度的文本，设置居中显示的情况**
+
 ![不同高度的文本，设置居中显示的情况.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/不同高度的文本，设置居中显示的情况.gif)
 
 这里详见:[DiffHeightTextCenterActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/DiffHeightTextCenterActivity.java)
 
 **(四)规定行数的流式布局**
+
 ![规定行数的文本.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/规定行数的文本.gif)
 
 这里详见:[LineFlowActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/LineFlowActivity.java)
