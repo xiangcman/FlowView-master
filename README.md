@@ -8,16 +8,20 @@
 
 这里详见:[MainActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/MainActivity.java)
 
+
 **(二)不同高度的文本，没设置居中显示的情况**
 
 ![不同高度的文本，没设置居中显示的情况.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/不同高度的文本，没设置居中显示的情况.gif)
+
 这里详见:[DiffHeightTextActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/DiffHeightTextActivity.java)
+
 
 **(三)不同高度的文本，设置居中显示的情况**
 
 ![不同高度的文本，设置居中显示的情况.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/不同高度的文本，设置居中显示的情况.gif)
 
 这里详见:[DiffHeightTextCenterActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/DiffHeightTextCenterActivity.java)
+
 
 **(四)规定行数的流式布局**
 
