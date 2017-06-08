@@ -72,7 +72,7 @@ dependencies {
 ![自带滑动结构的流式布局.gif](https://github.com/1002326270xc/FlowView-master/blob/master/photos/自带滑动结构的流式布局.gif)
 
 这里详见:[ScrollFlowActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/ScrollFlowActivity.java)
-**thanks:**这里滑动的处理借鉴的[SuitLines](https://github.com/whataa/SuitLines)(一个图标控件)、[SwipeDelMenuLayout](https://github.com/mcxtzhang/SwipeDelMenuLayout)(侧拉菜单)
+**thanks:** 这里滑动的处理借鉴的[SuitLines](https://github.com/whataa/SuitLines)(一个图标控件)、[SwipeDelMenuLayout](https://github.com/mcxtzhang/SwipeDelMenuLayout)(侧拉菜单)
 
 ### 关于我:
 
