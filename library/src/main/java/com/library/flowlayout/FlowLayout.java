@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
+
 /**
  * Created by xiangcheng on 17/6/2.
  * 打造一款具有滑动，并且不同高度的view会居中显示的流式布局
@@ -83,7 +85,7 @@ public class FlowLayout extends ViewGroup implements FlowNotification {
 
     public FlowLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.LineFlowLayout);
+        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.FlowLayout);
         isLineCenter = array.getBoolean(R.styleable.FlowLayout_is_line_center, default_line_center);
         array.recycle();
         initArgus(context, attrs);

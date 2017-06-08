@@ -8,7 +8,7 @@
         android:id="@+id/text_flow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="文字式FlowLayout" />
+        android:text="文字式FlowLayout(模拟网络代码)" />
 
     <Button
         android:id="@+id/diff_height_text_flow"
@@ -26,7 +26,7 @@
         android:id="@+id/line_flow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="规定行数的FlowLayout" />
+        android:text="规定行数的FlowLayout(demo:3行)" />
 
     <Button
         android:id="@+id/scroll_flow"

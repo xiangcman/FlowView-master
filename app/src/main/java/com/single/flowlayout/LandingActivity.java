@@ -18,7 +18,7 @@ public class LandingActivity extends AppCompatActivity {
         findViewById(R.id.text_flow).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LandingActivity.this, MainActivity.class));
+                startActivity(new Intent(LandingActivity.this, NormalLoadActivity.class));
             }
         });
         findViewById(R.id.line_flow).setOnClickListener(new View.OnClickListener() {

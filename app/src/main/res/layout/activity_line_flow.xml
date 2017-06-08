@@ -9,6 +9,7 @@
         android:id="@+id/flow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        scrollflow:flow_line_count="5" />
+        scrollflow:flow_line_count="3"
+        scrollflow:is_line_center="true"/>
 
 </LinearLayout>
