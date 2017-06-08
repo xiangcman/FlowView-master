@@ -33,11 +33,23 @@
 
 **属性:**
 ```xml
+ <declare-styleable name="FlowLayout">
+        <!--文本是否居中-->
+        <attr name="is_line_center" format="boolean" />
+ </declare-styleable>
+
 <declare-styleable name="LineFlowLayout">
         <!--规定行数-->
         <attr name="flow_line_count" format="integer" />
-        <!--文本是否居中-->
-        <attr name="is_line_center" format="boolean" />
+</declare-styleable>
+
+<declare-styleable name="ScrollFlowLayout">
+        <!--上边界阴影颜色-->
+        <attr name="effect_top_color" format="color" />
+        <!--下边界阴影颜色-->
+        <attr name="effect_bottom_color" format="color" />
+        <!--滑动到顶部或底部是否需要阴影效果-->
+        <attr name="need_effect" format="boolean" />
 </declare-styleable>
 ```
 
@@ -55,8 +67,12 @@ dependencies {
 }
 ```
 
-**后期添加:**
-最近在学习自定义滑动控件，自己也给该流式布局加上滑动的处理，上面的demo里面在时用的是`ScrollView`处理滑动
+**后期添加(自带滑动结构的流式布局):**
+
+![自带滑动结构的流式布局.gif](http://upload-images.jianshu.io/upload_images/2528336-bd931ae7b5834345.gif?imageMogr2/auto-orient/strip)
+
+这里详见:[ScrollFlowActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/ScrollFlowActivity.java)
+**thanks:**这里滑动的处理借鉴的[SuitLines](https://github.com/whataa/SuitLines)(一个图标控件)、[SwipeDelMenuLayout](https://github.com/mcxtzhang/SwipeDelMenuLayout)(侧拉菜单)
 
 ### 关于我:
 
