@@ -1,6 +1,5 @@
 package com.library.flowlayout;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -281,12 +280,10 @@ public class ScrollFlowLayout extends FlowLayout {
             Log.d(TAG, "规则的");
         } else {
             //以实际屏高为标准
-            Log.d(TAG, "不规则的");
-            int contentHeight = ((Activity) getContext()).findViewById(android.R.id.content).getHeight();
-            height = Math.min(totalHeight, contentHeight);
+            height = measureHeight;
         }
         //计算偏移量
-        verticalOffset = totalHeight - height;//如果是正直，说明内容的高度比我们的实际高度高，如果是负值说明还没填满
+        verticalOffset = totalHeight + getPaddingTop() + getPaddingBottom() - height;//如果是正直，说明内容的高度比我们的实际高度高，如果是负值说明还没填满
         setMeasuredDimension(width, height);
     }
 }
