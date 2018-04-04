@@ -53,6 +53,9 @@
 </declare-styleable>
 ```
 
+**1.1版本:**
+修复规定行数时从网络加载数据显示问题
+
 **gradle依赖**
 ```java
 allprojects {
@@ -63,7 +66,7 @@ allprojects {
 }
 
 dependencies {
-        compile 'com.github.1002326270xc:FlowView-master:v1.0'
+        compile 'com.github.1002326270xc:FlowView-master:v1.1'
 }
 ```
 
@@ -73,6 +76,12 @@ dependencies {
 
 这里详见:[ScrollFlowActivity](https://github.com/1002326270xc/FlowView-master/blob/master/app/src/main/java/com/single/flowlayout/ScrollFlowActivity.java)
 **thanks:** 这里滑动的处理借鉴的[SuitLines](https://github.com/whataa/SuitLines)(一个图标控件)、[SwipeDelMenuLayout](https://github.com/mcxtzhang/SwipeDelMenuLayout)(侧拉菜单)
+
+**欢迎大家提出问题，留言板留言或邮箱直接联系我。我会第一时间测试相关的bug**
+
+**欢迎客官到本店光临(qq群):**
+
+<image src="https://github.com/1002326270xc/LayoutManager-FlowLayout/blob/master/photos/IMG_0221.jpg" width="250" width="250" title="qq群"/>
 
 ### 关于我:
 
