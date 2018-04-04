@@ -9,7 +9,7 @@ import android.util.AttributeSet;
  */
 
 public class LineFlowLayout extends FlowLayout {
-    private int lineCount;
+    private int mLineCount;
     private static final int DEFAULT_COUNT = 2;
 
     public LineFlowLayout(Context context) {
@@ -27,7 +27,7 @@ public class LineFlowLayout extends FlowLayout {
     @Override
     protected void initArgus(Context context, AttributeSet attrs) {
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.LineFlowLayout);
-        lineCount = array.getInt(R.styleable.LineFlowLayout_flow_line_count, DEFAULT_COUNT);
+        mLineCount = array.getInt(R.styleable.LineFlowLayout_flow_line_count, DEFAULT_COUNT);
         array.recycle();
     }
 
@@ -35,7 +35,7 @@ public class LineFlowLayout extends FlowLayout {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         totalHeight = 0;
-        lineCount = Math.min(heightLines.size(), lineCount);
+        int lineCount = Math.min(heightLines.size(), mLineCount);
         for (int i = 0; i < lineCount; i++) {
             totalHeight += heightLines.get(i);
         }
