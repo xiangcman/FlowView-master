@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/1002326270xc/FlowView-master.svg)](https://jitpack.io/#1002326270xc/FlowView-master/v1.0)
+[![](https://jitpack.io/v/1002326270xc/FlowView-master.svg)](https://jitpack.io/#1002326270xc/FlowView-master/v1.1)
 
 在写该文章之前自己也写了一个用`RecyclerView`实现的流式布局[RecyclerView实现的流式布局](https://github.com/1002326270xc/LayoutManager-FlowLayout),也得到一些关注，但是也有不少的朋友提出了相关的问题，比如想规定行数的流式布局，还有item高度不统一时动态显示item的位置问题。于是近两天就简单写了个`ViewGroup`实现的流式布局：
 
